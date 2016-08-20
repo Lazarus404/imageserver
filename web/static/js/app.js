@@ -266,10 +266,10 @@ $( document ).ready(function() {
       success: function( data, textStatus, jqXHR ) {
         var list = data.list;
         clear_images();
+        state.has_next = data.has_next;
+        state.has_prev = data.has_prev;
         for (var i=0, len=list.length; i<len; i++) {
           if (list[i].filename) {
-            state.has_next = data.has_next;
-            state.has_prev = data.has_prev;
             add_image(list[i].filename, list[i].thumbnail, list[i].name, list[i].description);
           }
         }
