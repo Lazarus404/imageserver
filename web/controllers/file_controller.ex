@@ -62,10 +62,6 @@ defmodule Imageserver.FileController do
     scope = %{filename: get_filename(upload.filename)}
     {:ok, file} = SiteAssets.store({upload, scope})
 
-    conn
-    |> put_status(:unprocessable_entity)
-    |> json(%{status: "error", data: "bob"})
-
     changeset = Image.changeset(%Image{}, %{name: name, description: desc, filename: scope.filename, user_id: current_user.id})
     case Repo.insert(changeset) do
       {:ok, _image} ->
