@@ -92,6 +92,20 @@ input[type=text].highlight {
   width: 920px;
 }
 
+.image-empty {
+  display: block;
+  margin: 40px 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.image-empty span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .image-node {
   display: inline-block;
   width: 230px;

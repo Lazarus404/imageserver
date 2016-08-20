@@ -348,10 +348,26 @@ $( document ).ready(function() {
    **/
   function render_images() {
     $(".image-container").empty();
+    if (state.images.length == 0) {
+      render_no_image();
+      return;
+    }
     for (var i=0,len=state.images.length; i<len; i++) {
       render_image(state.images[i]);
     }
     update_pagination();
+  }
+
+  /**
+   * Displays "No images uploaded" panel if images buffer is empty.
+   **/
+  function render_no_image() {
+    var node = $("<div/>"),
+        label = $("<span/>");
+    node.addClass("image-empty");
+    label.html("No images available. Please upload an image.");
+    node.append(label);
+    $(".image-container").append(node);
   }
 
   /**
