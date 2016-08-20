@@ -1,0 +1,64 @@
+
+  <div class="page-container">
+
+    <section id="register" class="dialog">
+      <h1>Registration:</h1>
+      <label><span>Email address:</span>
+        <input type="text" class="email-fld" />
+      </label>
+      <label><span>Password:</span>
+        <input type="password" class="password-fld" />
+      </label>
+      <label><span>Confirm password:</span>
+        <input type="password" class="confirm-fld" />
+      </label>
+      <div class="error">&nbsp;</div>
+      <span class="submit-btn"><button class="submit">Register</button></span>
+      <a href="#" class="change-panel">Click here to login</a>
+    </section>
+
+    <section id="login" class="dialog">
+      <h1>Login:</h1>
+      <h5>Please login using the form below.</h5>
+      <label><span>Email address:</span>
+        <input type="text" class="email-fld" />
+      </label>
+      <label><span>Password:</span>
+        <input type="password" class="password-fld" />
+      </label>
+      <div class="error">&nbsp;</div>
+      <span class="submit-btn"><button class="submit">Login</button></span>
+      <a href="#" class="change-panel">Click here to register</a>
+    </section>
+
+    <section id="upload" class="dialog med">
+      <h1>Upload Image:</h1>
+      <h5>Provide the details for your image, below.</h5>
+      <label><span>Image:</span>
+        <input type="file" class="upload_file" />
+      </label>
+      <span class="note">Maximum size 5Mb.</span>
+      <label><span>Name:</span>
+        <input type="text" class="upload_name" />
+      </label>
+      <label><span>Description:</span>
+        <textarea class="upload_description" rows="4"></textarea>
+      </label>
+      <div class="error">&nbsp;</div>
+      <span class="submit-btn"><button class="submit">Upload</button></span>
+      <a href="#" class="change-panel">Back to image list</a>
+    </section>
+
+    <section id="image_list">
+      <div>
+        <a href="#" class="change-panel">Upload an image</a>
+        <a href="#" class="refresh">Refresh list</a>
+      </div>
+      <div class="image-container"></div>
+      <div class="pagination">
+        <a href="#" class="prev-page">&lt;&lt; Prev page</a> |
+        <a href="#" class="next-page">Next page &gt;&gt;</a>
+      </div>
+    </section>
+
+  </div>

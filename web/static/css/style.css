@@ -1,0 +1,128 @@
+body, html {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+}
+
+h1, h5 {
+  padding: 0;
+  margin: 2px 0 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #33f;
+}
+a:hover {
+  color: #33c;
+}
+
+label {
+  display: block;
+  margin:  5px 0 10px 0;
+}
+
+label>span, span.submit-btn {
+  display: inline-block;
+  width: 130px;
+  text-align: right;
+  vertical-align: top;
+}
+
+button {
+  background-color: #fcfcfc;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 3px 10px 5px 10px;
+  margin-right: 5px;
+}
+
+section {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 50px auto 0 auto;
+}
+
+section.hidden {
+  display: none;
+}
+
+.error {
+  color: #f33;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+input[type=text].highlight {
+  border: #f00 1px solid;
+}
+
+.change-panel {
+  font-size: 12px;
+}
+
+.page-container {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.dialog {
+  position: relative;
+  width: 350px;
+}
+
+.dialog.med {
+  width: 450px;
+}
+
+.refresh {
+  float: right;
+  font-size: 12px;
+}
+
+.note {
+  margin-left: 135px;
+  font-size: 10px;
+}
+
+#image_list {
+  width: 920px;
+}
+
+.image-node {
+  display: inline-block;
+  width: 230px;
+}
+
+.image-thumb {
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+
+.image-name {
+  display: block;
+  margin: 0 15px 10px 15px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.image-desc {
+  display: block;
+  margin: 0 15px;
+  font-size: 12px;
+}
+
+.pagination {
+  text-align: right;
+}
+
+.next-page, .prev-page {
+  font-size: 12px;
+}
