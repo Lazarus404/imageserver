@@ -30,8 +30,8 @@ config :ex_aws,
 config :ex_trello, :oauth, [
   consumer_key:    System.get_env("TRELLO_KEY"),
   consumer_secret: System.get_env("TRELLO_SECRET"),
-  token:           "2ef5a4b3d9e0a7f5422fa6d39b07f63dea7a566f25546606249b3db3910d66fa",
-  token_secret:    "2d0e30e33bd9071e8a48325c4861f00c"
+  token:           System.get_env("TRELLO_TOKEN"),
+  token_secret:    System.get_env("TRELLO_TOKEN_SECRET")
 ]
 
 
