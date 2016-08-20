@@ -1,20 +1,3 @@
 # Imageserver
-
-To start your Phoenix app:
-
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  * Install Node.js dependencies with `npm install`
-  * Start Phoenix endpoint with `mix phoenix.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+---
+This is a Phoenix / Elixir application which allows users to register and login. Once authenticated, they can upload images with an associated name and description.  These images are thumbnailed and uploaded to AWS S3 (both original and thumb).  The image, name and description are also posted to Trello for viewing by an administrator.  Users can view their images in a paginated form in the client.
